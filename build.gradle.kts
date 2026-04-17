@@ -29,10 +29,14 @@ repositories {
     }
 }
 
+val driverConfiguration: Configuration by configurations.creating
+
 // Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/version_catalogs.html
 dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.opentest4j)
+
+    driverConfiguration("com.dameng:DmJdbcDriver18:8.1.3.140")
 
     // IntelliJ Platform Gradle Plugin Dependencies Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-dependencies-extension.html
     intellijPlatform {
@@ -127,6 +131,13 @@ kover {
     }
 }
 
+val downloadDrivers by tasks.registering(Copy::class) {
+    from(driverConfiguration) {
+        rename { "DmJdbcDriver18-8.1.3.140.jar" }
+    }
+    into(layout.projectDirectory.dir("src/main/resources/jdbc-drivers/Dameng/8.1.3.140/com/dameng/DmJdbcDriver18/8.1.3.140"))
+}
+
 tasks {
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
@@ -134,6 +145,10 @@ tasks {
 
     publishPlugin {
         dependsOn(patchChangelog)
+    }
+
+    processResources {
+        dependsOn(downloadDrivers)
     }
 }
 

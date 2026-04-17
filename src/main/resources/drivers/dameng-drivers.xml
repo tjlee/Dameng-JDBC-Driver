@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+  <driver id="dameng" name="Dameng" dialect="Oracle" driver-class="dm.jdbc.driver.DmDriver">
+    <url-template name="default"
+      template="jdbc:dm://{host::localhost}[:{port::5236}][/{database::DAMENG}][\?&lt;&amp;,user={user},password={password},{:identifier}={:param}&gt;]"/>
+    <option name="auto-sync" value="true"/>
+    <artifact id="Dameng" rolling="true"/>
+  </driver>
+</drivers>

@@ -5,11 +5,15 @@
     <vendor>tjlee</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.database</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <extensions defaultExtensionNs="com.intellij.database">
+        <artifactsConfig config="drivers/dameng-artifacts.xml"/>
+        <driversConfig config="drivers/dameng-drivers.xml"/>
+    </extensions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.tjlee.damengjdbcdriver.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.tjlee.damengjdbcdriver.startup.MyProjectActivity" />
+        <applicationService serviceImplementation="com.github.tjlee.damengjdbcdriver.DriverInstaller"/>
+        <postStartupActivity implementation="com.github.tjlee.damengjdbcdriver.DriverInstallerStartupActivity"/>
     </extensions>
 </idea-plugin>

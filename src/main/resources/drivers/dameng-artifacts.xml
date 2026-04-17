@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts>
+  <artifact id="Dameng" name="Dameng JDBC Driver">
+    <version version="8.1.3.140">
+      <item url="file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Dameng/8.1.3.140/com/dameng/DmJdbcDriver18/8.1.3.140/DmJdbcDriver18-8.1.3.140.jar"/>
+    </version>
+    <version version="7.6.0.77">
+      <item url="file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Dameng/7.6.0.77/com/dameng/Dm7JdbcDriver17/7.6.0.77/Dm7JdbcDriver17-7.6.0.77.jar"/>
+    </version>
+  </artifact>
+</artifacts>
