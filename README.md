@@ -1,8 +1,8 @@
 # Dameng JDBC Driver
 
 ![Build](https://github.com/tjlee/Dameng-JDBC-Driver/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/31329)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/31329)
 
 <!-- Plugin description -->
 Bundles and automatically installs the **Dameng (DM) JDBC driver** into JetBrains DataGrip and other IntelliJ-based IDEs.
