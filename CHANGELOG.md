@@ -9,3 +9,6 @@
 ### Added
 - Dameng JDBC Driver 7.6.0.77 (DM7) bundled
 - Dameng JDBC Driver 8.1.3.140 (DM8) bundled
+
+## [1.0.1] - 2026-04-21
+- Changed plugin's description

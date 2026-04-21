@@ -5,15 +5,14 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 
 <!-- Plugin description -->
-[Dameng](https://www.dameng.com/) (DM) JDBC driver plugin for DataGrip and other JetBrains IDEs with database support.
+Bundles and automatically installs the **Dameng (DM) JDBC driver** into JetBrains DataGrip and other IntelliJ-based IDEs.
 
-Adds **DAMENG** as a native data source, so you can browse schemas, run queries, and manage data directly from your IDE — with no manual driver download required.
+Dameng is a relational database management system developed by Wuhan Dameng Database Co., Ltd. This plugin ships the driver JAR files directly — no manual download or configuration is required. The driver is installed automatically on IDE startup and is immediately available for use in database connections.
 
-**Features:**
-- Dameng appears in the *New Data Source* dialog alongside other built-in databases
-- Driver JAR bundled inside the plugin — works fully offline
-- Supports DM JDBC Driver versions 7.6.0.77 (DM7) and 8.1.3.140 (DM8)
-- Native `jdbc:dm://` URL scheme; default port 5236
+**Bundled driver versions:** 7.6.0.77 (DM7), 8.1.3.140 (DM8)
+
+**Connection URL format:**
+`jdbc:dm://<host>:<port>/<database>`
 <!-- Plugin description end -->
 
 ## Installation
